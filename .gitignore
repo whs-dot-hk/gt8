@@ -1,0 +1,12 @@
+node_modules
+
+redis-seed/title.basics.tsv*
+redis-seed/title.ratings.tsv*
+
+redis-seed/movies_imdb_id
+
+redis-seed/filtered_ratings.tsv
+
+redis-seed/gt8_movies_imdb_id
+
+redis-seed/data.txt
