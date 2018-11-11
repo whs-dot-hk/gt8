@@ -3,7 +3,13 @@
 $ yarn test
 ```
 
-## Redis Seeding
+## Run (Method 1)
+```
+$ sudo docker-compose up
+```
+
+## Run (Method 2)
+### Redis Seeding
 ```
 $ cd redis-seed
 ```
@@ -38,8 +44,11 @@ $ awk 'NR > 1 { printf "SADD gt8 %s\n", $0 }' gt8_movies_imdb_id > data.txt
 $ cat data.txt | redis-cli --pipe
 ```
 
-## Start
+### Start
 ```
 $ cd ../
 $ yarn start
 ```
+
+##
+Visit http://localhost:3000/
