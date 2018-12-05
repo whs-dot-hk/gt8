@@ -33,7 +33,7 @@ $ awk -f filter.awk ids=movies_imdb_id title.ratings.tsv > filtered_ratings.tsv
 ```
 
 ```
-$ awk '($2 >= 8.1 && $3 >= 350000) { print $1 }' title.ratings.tsv > gt8_movies_imdb_id
+$ awk '($2 >= 8.1 && $3 >= 350000) { print $1 }' filtered_ratings.tsv > gt8_movies_imdb_id
 ```
 
 ```
