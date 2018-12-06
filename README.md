@@ -1,3 +1,6 @@
+# gt8
+[![CircleCI](https://circleci.com/gh/whs-dot-hk/gt8.svg?style=shield)](https://circleci.com/gh/whs-dot-hk/gt8)
+
 ## Test 1
 ```
 $ yarn test
