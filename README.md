@@ -1,4 +1,4 @@
-## Test
+## Test 1
 ```
 $ yarn test
 ```
@@ -48,6 +48,13 @@ $ cat data.txt | redis-cli --pipe
 ```
 $ cd ../
 $ yarn start
+```
+
+## Test 2
+```
+$ sudo docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0110413/ > test1.json
+$ sudo docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0455275/ > test2.json
+$ yarn test
 ```
 
 ##

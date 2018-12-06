@@ -10,3 +10,6 @@ redis-seed/filtered_ratings.tsv
 redis-seed/gt8_movies_imdb_id
 
 redis-seed/data.txt
+
+test1.json
+test2.json
