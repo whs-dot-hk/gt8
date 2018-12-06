@@ -20,4 +20,5 @@ jobs:
       - run: docker-compose up -d
       - run: docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0110413/ > test1.json
       - run: docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0455275/ > test2.json
+      - run: docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0033467/ > test3.json
       - run: yarn test # Test 2
