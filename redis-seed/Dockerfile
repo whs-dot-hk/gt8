@@ -19,6 +19,6 @@ RUN awk -f filter.awk ids=movies_imdb_id title.ratings.tsv > filtered_ratings.ts
 
 RUN awk '($2 >= 8.1 && $3 >= 350000) { print $1 }' filtered_ratings.tsv > gt8_movies_imdb_id
 
-RUN awk 'NR > 1 { printf "SADD gt8 %s\n", $0 }' gt8_movies_imdb_id > data.txt
+RUN awk '{ printf "SADD gt8 %s\n", $0 }' gt8_movies_imdb_id > data.txt
 
 CMD cat data.txt | redis-cli --pipe -h redis

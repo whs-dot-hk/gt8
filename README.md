@@ -37,7 +37,7 @@ $ awk '($2 >= 8.1 && $3 >= 350000) { print $1 }' filtered_ratings.tsv > gt8_movi
 ```
 
 ```
-$ awk 'NR > 1 { printf "SADD gt8 %s\n", $0 }' gt8_movies_imdb_id > data.txt
+$ awk '{ printf "SADD gt8 %s\n", $0 }' gt8_movies_imdb_id > data.txt
 ```
 
 ```
@@ -54,6 +54,7 @@ $ yarn start
 ```
 $ sudo docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0110413/ > test1.json
 $ sudo docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0455275/ > test2.json
+$ sudo docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0033467/ > test3.json
 $ yarn test
 ```
 
