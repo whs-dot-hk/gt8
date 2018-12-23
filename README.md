@@ -3,7 +3,7 @@
 
 ## Test 1
 ```
-$ yarn test
+$ yarn test1
 ```
 
 ## Run (Method 1)
@@ -58,7 +58,7 @@ $ yarn start
 $ sudo docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0110413/ > test1.json
 $ sudo docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0455275/ > test2.json
 $ sudo docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0033467/ > test3.json
-$ yarn test
+$ yarn test2
 ```
 
 ##

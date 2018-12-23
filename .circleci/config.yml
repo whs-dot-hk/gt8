@@ -15,11 +15,11 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn test # Test 1
+      - run: yarn test1 # Test 1
       - setup_remote_docker
       - run: docker-compose up -d
       - run: docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0110413/ > test1.json
       - run: docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0455275/ > test2.json
       - run: docker run --network container:web appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:3000/tt0033467/ > test3.json
       - run: docker-compose down
-      - run: yarn test # Test 2
+      - run: yarn test2 # Test 2
